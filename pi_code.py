@@ -7,7 +7,7 @@ import time
 text=""
 
 def job():
-    with urllib.request.urlopen("https://api.nasa.gov/insight_weather/?api_key=irvJZWTRZKHJLAt8YsvJ5LTxYSbrvSnAoOJ8Ayac&feedtype=json&ver=1.0") as url:
+    with urllib.request.urlopen("https://api.nasa.gov/insight_weather/?api_key=YOUR-API-KEY-HERE&feedtype=json&ver=1.0") as url:
         data = json.loads(url.read())
         days=list(data.keys())
         res=[]
